@@ -1,0 +1,349 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Header Styles */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Section Styles */
+section {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.main-section h1 {
+  font-size: 2rem;
+  color: #333;
+  border-bottom: 2px solid #333;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  font-size: 35px;
+}
+
+/* section h2 {
+  
+} */
+
+/* Portfolio Styles */
+.portfolio-item {
+  background-color: #f4f4f4;
+  padding: 1.5rem;
+  margin-bottom: 35px;
+  border-radius: 5px;
+}
+
+.portfolio-item .Name {
+  font-size: 25px;
+  color: #333;
+  margin-top: 0;
+}
+.portfolio-item .Description {
+  font-size: 18px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-item {
+  background-color: #f4f4f4;
+  padding: 1.5rem;
+  margin-bottom: 35px;
+  border-radius: 5px;
+}
+
+.portfolio-item .Name {
+  font-size: 25px;
+  color: #333;
+  margin-top: 0;
+}
+.portfolio-item .Description {
+  font-size: 18px;
+}
+
+
+img {
+  width: 90%;
+  max-width: 1400px;
+
+  max-height: 97%;
+}
+
+a {
+  color: black;
+}
+
+.projects img {
+  transform-origin: center;
+  display: block;
+  transition: transform 0.3s ease;
+  width: 100%; /* Ensure full width for responsiveness */
+  height: auto; /* Maintain aspect ratio */
+  max-width: 200px; /* Set a reasonable max-width */
+}
+
+.projects img:hover {
+  transform: scale(1.05);
+}
+
+.portfolio-gallery img {
+  width: 100%; /* Ensure full width for responsiveness */
+  height: auto; /* Maintain aspect ratio */
+  max-width: 200px; /* Ensure images have a normal size */
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .projects img,
+  .portfolio-gallery img {
+    max-width: 100%; /* Allow images to take up full width on small screens */
+  }
+}
+
+.portfolio-gallery {
+  display: flex;
+  overflow-x: auto;
+  gap: 15px;
+  overflow-y: hidden;
+}
+
+.images-container {
+  padding: 11px;
+}
+/* Lightbox Styles */
+.lightbox {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.lightbox .close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 2rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+.lightbox .prev,
+.lightbox .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.lightbox .prev {
+  left: 20px;
+}
+
+.lightbox .next {
+  right: 20px;
+}
+
+/* Contact Section */
+.contact-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.contact-links a {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.contact-links a:hover {
+  background-color: #555;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 2rem;
+}
+
+footer p {
+  margin: 0;
+}
+
+
+#Skills ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+#Skills ul li {
+  font-size: 22px;
+  margin: 10px 0;
+  position: relative;
+  padding-left: 30px;
+}
+
+#Skills ul li::before {
+  content: "✓"; /* Check mark for the bullet */
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #5bb742;
+  font-size: 20px;
+}
+
+#Skills ul li span {
+  font-weight: bold;
+  color: #444;
+}
+
+ /* تصميم الزر */
+ #backToTopBtn {
+  display: none; /* يكون مخفيًا بشكل افتراضي */
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #797979;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 50px;
+}
+
+#backToTopBtn:hover {
+  background-color: #333; /* تغيير اللون عند المرور فوق الزر */
+}
+
+p {
+  font-size: 20px; /* Adjust the size as needed */
+}
+
+
+
+
+
+
+.certifications {
+  display: flex;
+  justify-content: space-between; /* Align items to the left and right */
+  margin: 20px 0;
+}
+
+.cert-list {
+  flex: 1; /* Takes up one half of the available space */
+  padding-right: 20px; /* Spacing between columns */
+}
+
+.right {
+  padding-left: 20px; /* Spacing between columns */
+}
+
+.portfolio-gallery {
+  flex: 1; /* Takes up the other half of the available space */
+}
+
+.certifications h1, .certifications h3 {
+  margin-bottom: 10px;
+}
+
+.certifications ul {
+  padding: 0;
+}
+
+
+.images-container img {
+  width: 100%; /* Adjusts image to fit within its container */
+  height: auto; /* Keeps the aspect ratio */
+  margin-top: 10px; /* Adds spacing above images */
+}
+
+
+#certifications ul li {
+  margin: 10px 0;
+  font-size: 19px;
+  list-style-type: none;
+  position: relative;
+}
+
+
+.certification {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  margin-bottom: 35px;
+  border-radius: 5px;
+}
+
+.certification .Name {
+  font-size: 25px;
+  color: #333;
+  margin-top: 0;
+}
+.certification .Description {
+  font-size: 18px;
+}
